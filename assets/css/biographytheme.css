@@ -1,0 +1,458 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #D6DFFE 0%, #EDE2FF 33.72%, #BFCEFF 66.45%, #E0E7FF 95.21%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#bg-image {
+  /* The image used */
+  background-image: url("/assets/IU/Biography/iuprofile.png");
+  position: relative; 
+  
+  /* Full height */
+  height: 100vh;
+  object-fit: cover;
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: -72px;
+  z-index:1;
+}
+
+
+/* responsive background image when desktop size*/
+@media (min-width:665px) {
+  #bg-image {
+    position: relative;
+    object-fit: cover;
+    background-size: 70vh;
+    left: -180px;
+  }
+}
+
+@media (min-width:965px) {
+  #bg-image {
+    position: relative;
+    object-fit: cover;
+    background-size: 75vh;
+    left: -300px;
+  }
+  .knowmoretext {
+    font-size: 4vw;
+    }
+}
+
+@media (min-width:1065px) {
+  .knowmoretext {
+    font-size: 5vw;
+  }
+  .iutext{
+    font-size: 5vw;
+  }
+  #bg-image {
+    position: relative;
+    object-fit: cover;
+    background-size: 80vh;
+    left: -400px;
+  
+  }
+
+ }
+.container {
+    position: absolute;
+}
+  
+/* Text*/
+.knowmoretext {
+  position: absolute;
+  width: 243px;
+  height: 68px;
+  left: 136px;
+  top: 112px;
+
+  font-family: 'Mitr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 84.02%;
+
+  letter-spacing: 0.015em;
+  color: #FFFFFF;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  }
+
+.iutext{
+  position: absolute;
+  width: 78px;
+  height: 110px;
+  left: 292px;
+  top: 160px;
+
+  font-family: 'Mitr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 110px;
+
+  letter-spacing: 0.085em;
+  color: #FFFFFF;
+  text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  }
+
+/*Card*/
+.cardstack{
+  position: relative;
+  margin-top: 10px;
+  /* top: 880px; */
+}
+
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+  height: 214px;
+  background-color: transparent;
+  border-style: none;
+  left: 10%; 
+  filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25));
+  /* border-radius: 42px; */
+  margin-bottom: 5%;
+  margin-right: 5%;
+}
+
+/*Information Part*/
+/*Rectangle Box*/
+.boxcontainer{
+  position: relative;
+  top:50% ; 
+}
+
+.rectangle1{
+  position: relative;
+  width: 348px;
+  height: 314px;
+  top: 10px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 38px;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  }
+  
+.rectangle2{
+  position: relative;
+  width: 348px;
+  height: 134px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 38px;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  }
+
+.rectangle3{
+  position: relative;
+  width: 208px;
+  height: 247px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 38px;
+  margin-left: 5%;
+  }
+
+  /*Contents in box*/
+  /*Box 1*/
+ 
+  .proflife {
+  /* Width and height */
+  width: 133px;
+  height: 25px;
+
+  /* Font styles */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+
+  /* Flexbox properties */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 13px;
+  gap: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Other styles */
+  position: relative;
+  left: 39px;
+  top: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  white-space: nowrap;
+  border: none;
+  pointer-events: none;
+  outline: none;
+  z-index: 2;    
+  }
+
+
+  .networth{
+  /* Width and height */
+  width: 178px;
+  height: 25px;
+
+  /* Font styles */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+
+  /* Flexbox properties */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 13px;
+  gap: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Other styles */
+  position: relative;
+  left: 42px;
+  top: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  white-space: nowrap;
+  border: none;
+  pointer-events: none;
+  outline: none;
+  z-index: 2;   
+  }
+
+
+/*Information in BOX*/
+.infotext1{
+  position: relative;
+  width: 164px;
+  height: 240px;
+  top: 20px;
+  left: 10px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.045em;
+
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.iuprofile2 {
+  position: relative;
+  width: 206px;
+  height: 280px;
+  top: -120px;
+  left: 70px;
+  
+  filter: drop-shadow(-13px 14px 4px rgba(0, 0, 0, 0.25));
+}
+
+.infotext2{
+  position: relative;
+  width: 309px;
+  height: 75px;
+  top: 16px;
+  left: 10px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.045em;
+
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.infotext3{
+  position: relative;
+  width: 179px;
+  height: 217px;
+  top: 15px;
+  left: 7px;
+
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.045em;
+
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/*Button*/
+.nextbtn {
+  /* Width and height */
+  width: 160px;
+  height: 34px;
+
+  /* Font styles */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+
+  /* Flexbox properties */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 9px 15px;
+  gap: 27px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Other styles */
+  position: relative;
+  left: 10%;
+  top:10%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+
+/* --- Flip card --- */
+
+/*The styling of the front siade and back side of all profilecards are written on this section while there are also the style
+of the card before flipping and the class function to make the card flip by using the rotation in Y axis of 180 degrees and
+-180 degrees to flip back in the opposite direction with the action by hover from the cursor*/
+
+.front,
+.back {
+  display: flex;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+  overflow: hidden;
+}
+
+/*Front style of the card with the before flipping style set*/
+.front {
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 2rem;
+  font-size: 1.618rem;
+  font-weight: 600;
+  color: transparent;;
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, adjust-hue($primary, -20deg), $primary);
+    opacity: .25;
+    z-index: -1;
+  }
+
+  /*Card transforming function class when it was hovered*/
+  .card:hover & {
+    transform: rotateY(180deg);
+  }
+  .card:nth-child(even):hover & {
+    transform: rotateY(-180deg);
+  }
+}
+
+/*The back side of the card style*/
+.back {
+  background: transparent;
+  transform: rotateY(-180deg);
+  padding: 0 2em;
+  
+  .button {
+    background: linear-gradient(135deg, adjust-hue($primary, -20deg), $primary);
+    
+    &:before {
+      box-shadow: 0 0 10px 10px rgba($primary, 0.25);
+    background-color: rgba($primary, 0.25);
+    }
+  }
+  
+  /*Class for hovering the back side of the card*/
+  .card:hover & {
+    transform: rotateY(0deg);
+  }
+  
+  .card:nth-child(even) & {
+    transform: rotateY(180deg);
+    
+    .button {
+    background: linear-gradient(135deg, adjust-hue($secondary, -20deg), $secondary);
+    
+    &:before {
+      box-shadow: 0 0 10px 10px rgba($secondary, 0.25);
+    background-color: rgba($secondary, 0.25);
+    }
+  }
+  }
+  
+  .card:nth-child(even):hover & {
+    transform: rotateY(0deg);
+  }
+}

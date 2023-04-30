@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>UAENA Playground</title>
+
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bootstrap 5 Mobile App Landing Page Template" />
+  
+  
+  <!-- Favorite icon , it's the icon shown with the title of the website for logo branding of my website-->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+  <!-- Google Font, since I used the font that also avaialble in google so I got the link provided on google with the preferred weight. -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Mitr:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+
+  <!-- FontAwesome JS Plugin for symbol and icons-->
+  <script defer src="/assets/fontawesome/js/all.min.js"></script>
+  <link rel="stylesheet" href="/assets/fonts/bootstrap-icons-1.10.4/font/bootstrap-icons.css" />
+  <!-- Bootsrap Plugins CSS -->
+  <link rel="stylesheet" href="/assets/plugins/bootstraps/css/bootstrap.min.css" />
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="/assets/css/biographytheme.css" />
+  <!-- Navigation Theme -->
+  <link rel="stylesheet" href="/assets/css/navigation.css" />
+
+</head>
+
+<body>
+  <!--Navigation Bar Section implementing by the use of Bootstrap plugin containing the hamburger menu that lists all the menu which lead to the other pages.
+    The container-fluid <div> box contains the logo of website with the hamburger tools as a button with the class navbar-toggler with the collapse function so that it can be toggle and collapse
+    in list with the sub-menu pages within the hamburger menu. -->
+    
+  <nav class="navbar navbar-static-top bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/IU/Main/logo.png" alt="UAENAlogo">
+      </a>
+      <ul class="navbar-nav ms-auto me-2">
+        <li class="nav-item ">
+          <a class="nav-link  " href="#">
+            <i class="margin-end bi bi-globe float-right"></i>
+          </a>
+        </li>
+      </ul>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Hamburger Menu listing all the sub-menu with the icon by the class from fontawesome plugin
+      All the navigation had been optimized for the responsiveness by the use of grid system in class navbar-nav.-->
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">
+              <i class="fa fa-fw fa-home"></i> Homepage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/menu/menu.html">
+              <i class="fa fa-border-all"></i> Main Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/biography/biography.html">
+              <i class="fa-regular fa-heart" style="color: #566598;"></i>
+              Biography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/discography/discography.html">
+              <i class="fa fa-music"></i> Discography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/movies/movie.html">
+              <i class="fa fa-film"></i> Movies & Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/photogallery/photogallery.html">
+              <i class="fa  fa-image"></i> Photo Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/musicvideo/musicvideo.html">
+              <i class="fa-brands fa-youtube"></i> Music Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-gear"></i> Setting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-cloud-moon"></i> Night Mode</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="bg-image"></div>
+    <!-- Content -->
+
+    <!--Text-->
+    <h1 class="knowmoretext"> Let's know more about</h1>
+    <h1 class="iutext">IU</h1>
+
+    <!--Card Part stacking in a row with the responsive function depends on the size of the screen from the plugin of Bootstrap
+    and each card will have front and back side, the front side have IU picture, and the back side contains some information.-->
+    <div class="cardstack">
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 card">
+          <div class="front">
+            <img alt="profilecard" src="/assets/IU/Biography/profilecard1.png">
+          </div>
+          <div class="back">
+            <img alt="revealcard" src="/assets/IU/Biography/revealcard1.png">
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 card">
+          <div class="front">
+            <img alt="profilecard" src="/assets/IU/Biography/profilecard2.png">
+          </div>
+          <div class="back">
+            <img alt="revealcard" src="/assets/IU/Biography/revealcard2.png">
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 card">
+          <div class="front">
+            <img alt="profilecard" src="/assets/IU/Biography/profilecard3.png">
+          </div>
+          <div class="back">
+            <img alt="revealcard" src="/assets/IU/Biography/revealcard3.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Information Part displaying in a row and responsive due to Bootstrap plugin and each box contains some information
+    in text format with some pictures.-->
+    <div class="boxcontainer">
+      <div class="row">
+        <!--Rectangle 1-->
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 rectangle1">
+          <button class="proflife">Professional Life</button>
+          <h4 class="infotext1"> IU is a renowned singer, songwriter, and actress.
+            She made her debut as a singer at the age of fifteen releasing her
+            first mini-album titled Lost and Found with Kakao M.
+            <br><br>
+            But, her album titled Growing Up and IU...IM became
+            the first big break in her music career. To date, she has
+            three studio albums: Last Fantasy, Modern Times, and Palette.
+          </h4>
+
+          <div class="iuprofile2">
+            <img src="/assets/IU/Biography/iuprofile2.png" alt="iuprofile" class="iuprofile2">
+          </div>
+        </div>
+
+        <!--Rectangle 2-->
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 rectangle2">
+          <button class="networth">Net worth of $15 million</button>
+          <div>
+            <h4 class="infotext2"> IU's success as a singer has brought
+              her not only critical acclaim but also financial prosperity.
+              With her impressive talent and hard work, she has accumulated
+              a net worth estimated at around 15 million dollars.
+            </h4>
+          </div>
+        </div>
+
+        <!--Rectangle 3-->
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 rectangle3">
+          <div>
+            <h4 class="infotext3"> Her success can be attributed to her massive
+              popularity in South Korea and beyond, where her albums and singles
+              consistently top charts and break records.
+              <br><br>
+              Despite her considerable wealth, IU remains humble and grounded.
+              She continues to work hard, challenging herself with new projects
+              and collaborations, and giving back to her fans and society through
+              charitable donations and philanthropic work.
+            </h4>
+          </div>
+        </div>
+
+
+        <!--Button to be clicked to go to the next page (Discorgaphy page)-->
+        <button class="nextbtn" onclick="redirectToDiscographyPage()">Next to Discography</button>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--Bottom Navigation Bar containing the audio which is the song from IU. Users can control the audio-->
+  <nav class="navbar fixed-bottom">
+    <div class="container-fluid">
+      <div class="audiowrap">
+        <audio controls autoplay loop controlslist="play nodownload ">
+          <source src="/assets/IU/Discography/Vinyl disk/growingupvinyl.mp4" type="audio/mp3" />
+          Your browser does not support the <audio> element.
+          </audio>
+      </div>
+
+      <!--The logo youtube, spotify and soundcloud brand in the bottom navigation bar from fontawesome-->
+      <div class="brand-audio">
+        <i class="fa-brands fa-youtube  " style="color: #566598;"></i>
+        <i class="fa-brands fa-spotify " style="color: #566598;"></i>
+        <i class="fa-brands fa-soundcloud " style="color: #566598;"></i>
+      </div>
+  </nav>
+
+  <!-- Javascript -->
+  <script defer type="text/javascript" src="/assets/plugins/bootstraps/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+</body>
+
+</html>

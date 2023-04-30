@@ -1,0 +1,131 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+  z-index: -1;
+}
+
+#bg-image {
+  /* The image used */
+  background-image: url("/assets/IU/Homepage/homepageiu.png");
+
+  /* Full height */
+  height: 100vh;
+  object-fit: cover;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+/*-----------------------------------------*/
+
+.container {
+    position: absolute;
+}
+
+  /* Place text in front of all elements */
+.text {
+  position: fixed;
+  width: 324px;    height: 24px;
+  left: 23px;
+  top: 66px;
+  font-family: 'Mitr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 102.52%;
+  color: #DCDDF3;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 5; /* Set the z-index to a value greater than 1 */
+}
+
+.IUtext {
+  position: fixed;
+  width: 162px;
+  height: 106px;
+  left: 23px;
+  top: 88px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 116px;
+  letter-spacing: 0.085em;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 5; /* Set the z-index to a value greater than 1 */
+}
+
+.leejieuntext {
+  position: fixed;
+  width: 232px;
+  height: 147px;
+  left: 23px;
+  top: 185px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 102.52%;
+  color: #DADBF9;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 5; /* Set the z-index to a value greater than 1 */
+}
+
+  /* Button */
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 21px;
+  gap: 7px;
+
+  /* Font styles */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  color: #000000;
+
+  position: absolute;
+  width: 156px;
+  height: 48px;
+  right: 8%;
+  bottom: 8%;
+
+  background: #F7F1FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 5;
+} 
+
+.blur {
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    bottom: 0;
+    height: 100vh;; 
+    z-index: 1;
+}
