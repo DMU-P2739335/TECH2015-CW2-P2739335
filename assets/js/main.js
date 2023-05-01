@@ -3,6 +3,9 @@
 function redirectToMenuPage() {
   window.location.href="../menu/menu.html";  
 }
+function redirectToMenuPage1() {
+  window.location.href="menu/menu.html";  
+}
 function redirectToPhotoGalleryPage() {
 window.location.href="../photogallery/photogallery.html";  
 }
